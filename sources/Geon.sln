@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 14.0.24720.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geon", "Geon\Geon.csproj", "{48124809-BE2B-4EF1-9EBD-E1CC0C08F4D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geon.Tests", "Geon.Tests\Geon.Tests.csproj", "{F865813E-2E68-498B-AB04-45D299DB04E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geon.Tests.Integration", "Geon.Tests.Integration\Geon.Tests.Integration.csproj", "{329DAE1C-D0AF-4FE3-B45C-0E3871917536}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48124809-BE2B-4EF1-9EBD-E1CC0C08F4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48124809-BE2B-4EF1-9EBD-E1CC0C08F4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48124809-BE2B-4EF1-9EBD-E1CC0C08F4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48124809-BE2B-4EF1-9EBD-E1CC0C08F4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F865813E-2E68-498B-AB04-45D299DB04E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F865813E-2E68-498B-AB04-45D299DB04E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F865813E-2E68-498B-AB04-45D299DB04E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F865813E-2E68-498B-AB04-45D299DB04E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329DAE1C-D0AF-4FE3-B45C-0E3871917536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329DAE1C-D0AF-4FE3-B45C-0E3871917536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329DAE1C-D0AF-4FE3-B45C-0E3871917536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329DAE1C-D0AF-4FE3-B45C-0E3871917536}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

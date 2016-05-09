@@ -1,0 +1,17 @@
+*.user
+*.suo
+*.ncrunch*
+*.log
+
+[Dd]ebug*/
+[Rr]elease*/
+packages/
+output/
+bin/
+*ncrunch*/
+.fake/
+.vs/
+
+build/*
+!build/build.fsx
+!build/build.nuspec
