@@ -4,13 +4,12 @@ using NUnit.Framework;
 namespace Geon.Tests.Integration
 {
     [TestFixture]
-    public class CsvFileTests
+    public class GeoFactoryTests
     {
         [Test]
-        public void CanOpenExistingFile()
+        public void CanOpenDefault()
         {
-            string filename = @"d:\Drive\Projects\GeoIPCountryWhois.csv";
-            Geo geo = GeoFactory.Csv(filename);
+            Geo geo = GeoFactory.Open();
 
             GeoData data = geo.Find("microsoft.com");
 

@@ -1,44 +1,27 @@
-﻿using Geon.Readers;
+﻿using Geon.Formats;
+using Geon.Readers;
+using Geon.Sources;
 using System;
-using System.IO;
-using System.Net;
 
 namespace Geon
 {
     public static class GeoFactory
     {
-        public static Geo Csv(string filename)
+        public static Geo Open()
         {
-            return StreamToCsv(File.OpenRead(filename));
+            return Open(with => { });
         }
 
-        public static Geo Csv(Uri url)
+        public static Geo Open(Action<GeoConfigurator> with)
         {
-            using (WebClient client = new WebClient())
-            {
-                byte[] data = client.DownloadData(url);
-                MemoryStream stream = new MemoryStream(data);
+            GeoConfiguration configurator = new GeoConfiguration();
 
-                return StreamToCsv(stream);
-            }
-        }
+            configurator.Reader(new CsvReader());
+            configurator.Format(new ZipFormat());
+            configurator.Source(new MaxMindSource());
 
-        public static Geo Csv(Stream stream)
-        {
-            return ReaderToCsv(new GeoCsvReader(stream));
-        }
-
-        private static Geo StreamToCsv(Stream stream)
-        {
-            using (Stream scope = stream)
-            {
-                return ReaderToCsv(new GeoCsvReader(scope));
-            }
-        }
-
-        private static Geo ReaderToCsv(GeoReader reader)
-        {
-            return new GeoService(reader.GetEntries());
+            with.Invoke(configurator);
+            return configurator.Instantiate();
         }
     }
 }

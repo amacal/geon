@@ -4,16 +4,9 @@ using System.IO;
 
 namespace Geon.Readers
 {
-    public class GeoCsvReader : GeoReader
+    public class CsvReader : GeoReader
     {
-        private readonly Stream stream;
-
-        public GeoCsvReader(Stream stream)
-        {
-            this.stream = stream;
-        }
-
-        public IEnumerable<GeoEntry> GetEntries()
+        public IEnumerable<GeoEntry> GetEntries(Stream stream)
         {
             using (StreamReader reader = new StreamReader(stream))
             {
@@ -24,7 +17,7 @@ namespace Geon.Readers
             }
         }
 
-        private GeoEntry GetEntryFromLine(string line)
+        private static GeoEntry GetEntryFromLine(string line)
         {
             string[] parts = line.Split(new[] { ',' }, 6, StringSplitOptions.RemoveEmptyEntries);
 
