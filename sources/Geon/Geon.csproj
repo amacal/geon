@@ -45,6 +45,7 @@
     <Compile Include="GeoRangeComparer.cs" />
     <Compile Include="GeoRange.cs" />
     <Compile Include="GeoReader.cs" />
+    <Compile Include="GeoExtensions.cs" />
     <Compile Include="GeoSource.cs" />
     <Compile Include="Readers\CsvReader.cs" />
     <Compile Include="GeoData.cs" />

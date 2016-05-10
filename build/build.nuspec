@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">    
+  <id>geon</id>
+  <title>Geon Library</title>
+  <version>1.0</version>
+  <authors>Adrian Macal</authors>
+  <owners>Adrian Macal</owners>
+  <summary>Geon library</summary>
+  <licenseUrl>https://raw.githubusercontent.com/amacal/geon/master/LICENSE.txt</licenseUrl>
+  <projectUrl>https://github.com/amacal/geon</projectUrl>
+  <iconUrl>https://raw.githubusercontent.com/amacal/geon/master/icon.png</iconUrl>
+  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  <description>A library which supports IP geolocation.</description>
+  <copyright>Copyright Adrian Macal 2016</copyright>    
+  <tags>geolocation</tags>
+  @dependencies@
+  @references@
+  </metadata>
+  @files@
+</package>

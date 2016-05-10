@@ -2,6 +2,7 @@
 *.suo
 *.ncrunch*
 *.log
+*.xml
 
 [Dd]ebug*/
 [Rr]elease*/
