@@ -9,6 +9,7 @@
 packages/
 output/
 bin/
+obj/
 *ncrunch*/
 .fake/
 .vs/
